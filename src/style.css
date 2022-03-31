@@ -425,6 +425,10 @@ footer a {
   nav{
     display: none;
   }
+  nav img {
+    max-width: 75px;
+    padding: 40px;
+  }
 
   .text-links,.active{
     position: fixed;
@@ -466,6 +470,8 @@ footer a {
   color: var(--main-color);
   border: none;
 }
+
+
   
   /*HOME*/
   .home-intro {
