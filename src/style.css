@@ -106,6 +106,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  
 }
 
 .home-intro span {
@@ -469,6 +470,7 @@ footer a {
   /*HOME*/
   .home-intro {
     flex-direction: column;
+    padding: 0 20px;
   }
   .home-intro span {
     font-size: 35px;
@@ -485,8 +487,8 @@ footer a {
 
   }
 
-  .home-portada i {
-    margin: 0 25px;
+  .home-portada li {
+    padding: 10px 15px;
   }
   /*ABOUT*/
 
