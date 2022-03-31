@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e52911e329.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Miguel, web developer</title>
+  </head>
+  <body>
+    <header id="#home">
+      <span class="toggle-btn" onclick="toggleNav()">&#9776;</span>
+
+      <nav class="top-bar">
+
+        <ul class="text-links">
+          <a href="/" onclick="responsiveToggle()"
+          ><img src="src/images/sidebar.png" alt="M" style="flex-grow: 0.2"
+        /></a>
+          <a href="#inicio" onclick="responsiveToggle()"
+            ><li><i class="fa-solid fa-user"></i> Sobre mi</li></a
+          >
+          <a href="#proyectos" onclick="responsiveToggle()"
+            ><li><i class="fa-solid fa-briefcase"></i> Proyectos</li></a
+          >
+          <a href="#contacto" onclick="responsiveToggle()"
+            ><li><i class="fa-solid fa-envelope"></i> Contacto</li></a
+          >
+        </ul>
+      </nav>
+      <div class="home-intro">
+        <div class="home-portada">
+          <span
+            >Hola, soy Miguel, diseño y creo <br />
+            para la web</span
+          >
+          <ul class="icon-links">
+            <a href="https://github.com/Miguel-0809" target="_blank"
+              ><li><i class="fa-brands fa-github"></i></li
+            ></a>
+            <a
+              href="https://www.facebook.com/miguelangel.paucarnavarro/"
+              target="_blank"
+              ><li><i class="fa-brands fa-facebook"></i></li
+            ></a>
+            <a
+              href="https://www.instagram.com/miguel_p987/?hl=es-la"
+              target="_blank"
+              ><li><i class="fa-brands fa-instagram"></i></li
+            ></a>
+          </ul>
+          <i>Aprendiz de por vida, amante de las computadoras y la comida</i>
+        </div>
+        <img src="src/images/portada.png" alt="portada" />
+      </div>
+    </header>
+    <!-- #About -->
+
+    <section id="inicio">
+      <div class="inicio-content">
+        <div>
+          <h1>Conocimientos</h1>
+          <img src="src/images/perfil.jpg" alt="profile" />
+        </div>
+        <div>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>Javascript</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Node JS</li>
+            <li>Firebase</li>
+            <li>SQL</li>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
+          <div class="bio-info">
+            <h3>Disfruto crear contenido web</h3>
+            <p>
+              Empecé desde niño en el mundo de las computadoras, viendo como
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              sint quam, numquam perspiciatis beatae nesciunt sunt voluptate
+              labore aut dolores ex ullam accusantium officia, in sapiente.
+              Tempore nulla id itaque. <br /><br /><a
+                href="src/pages/mybio.html"
+                >Seguir leyendo</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work-->
+
+    <section id="proyectos">
+      <h1>Proyectos</h1>
+
+      <div class="project-card">
+        <div class="description-card">
+          <h3>Ruta 365</h3>
+          <div class="skills-card">
+            <span>React</span>
+            <span>Bootstrap</span>
+          </div>
+          <p>
+            Página web diseñada para vender paquetes turísticos para el
+            departamento de Ica, Perú.
+          </p>
+        </div>
+
+        <div class="image-card">
+          <a href="https://miguel-0809.github.io/ruta365" target="_blank"
+            ><img src="src/images/Ruta365.png" alt="Ruta365"
+          /></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="description-card">
+          <h3>Ruta 365</h3>
+          <div class="skills-card">
+            <span>React</span>
+            <span>Bootstrap</span>
+          </div>
+          <p>
+            Página web diseñada para vender paquetes turísticos para el
+            departamento de Ica, Perú.
+          </p>
+        </div>
+
+        <div class="image-card">
+          <a href="https://miguel-0809.github.io/ruta365" target="_blank"
+            ><img src="src/images/Ruta365.png" alt="Ruta365"
+          /></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="description-card">
+          <h3>Ruta 365</h3>
+          <div class="skills-card">
+            <span>React</span>
+            <span>Bootstrap</span>
+          </div>
+          <p>
+            Página web diseñada para vender paquetes turísticos para el
+            departamento de Ica, Perú.
+          </p>
+        </div>
+
+        <div class="image-card">
+          <a href="https://miguel-0809.github.io/ruta365" target="_blank"
+            ><img src="src/images/Ruta365.png" alt="Ruta365"
+          /></a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contacto">
+      <div class="form-contact">
+        <h1>Contact <span>Me</span></h1>
+        <div class="form-div">
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label class="label-name">FullName</label>
+              <input type="text" name="name" class="contact-info" />
+            </p>
+            <p>
+              <label class="label-name">Email</label>
+              <input type="email" name="email" class="contact-info" />
+            </p>
+            <p>
+              <label class="label-name">Affair </label>
+              <input type="text" name="affair" class="contact-info" />
+            </p>
+            <p>
+              <label class="label-name">Message:</label>
+              <textarea name="message" rows="2" cols="40"></textarea>
+            </p>
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+
+          <div class="form-info">
+            <h3>More info</h3>
+            <ul>
+              <li>
+                <i class="fa-brands fa-facebook"></i>
+                <a
+                  href="https://www.facebook.com/miguelangel.paucarnavarro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i> m.pnavarro08@gmail.com
+              </li>
+              <li><i class="fa-solid fa-square-phone"></i> (+051)924327061</li>
+              <li>
+                I'd love your feedback, <br />
+                let me know what you think
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="home-footer">
+        <div>
+         <div><img src="src/images/M.png" alt="M"></div> 
+        <p>© 2022, Construido y diseñado por</p>
+        <p>Miguel Angel Paucar Navarro</p>
+     
+        </div>
+         </div>
+
+      <div class="social-footer">
+        <h3>Links</h3>
+        <ul>
+          <a href="#inicio"
+            > Sobre mi</li></a
+          >
+          <a href="#proyectos"
+            ><li>Proyectos</li></a
+          >
+          <a href="#contacto"
+            ><li> Contacto</li></a
+          >
+        </ul>
+      </div>
+
+      <div class="links-footer">
+        <h3>Encuentrame</h3>
+        <ul>
+          <a href="https://github.com/Miguel-0809" target="_blank"
+            ><li><i class="fa-brands fa-github"></i></li
+          ></a>
+          <a
+            href="https://www.facebook.com/miguelangel.paucarnavarro/"
+            target="_blank"
+            ><li><i class="fa-brands fa-facebook"></i></li
+          ></a>
+          <a
+            href="https://www.instagram.com/miguel_p987/?hl=es-la"
+            target="_blank"
+            ><li><i class="fa-brands fa-instagram"></i></li
+          ></a>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
