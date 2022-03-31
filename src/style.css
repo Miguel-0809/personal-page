@@ -21,11 +21,12 @@ header {
   font-size: 35px;
   cursor: pointer;
   display: none;
-  z-index: 100;
+  z-index: 10;
 }
 
 .active{
  display: block;
+ z-index: 20;
 }
 
 nav {
@@ -80,6 +81,7 @@ header {
 .icon-links > a {
   text-decoration: none;
   color: white;
+  overflow: hidden;
 }
 
 .text-links a:hover,
@@ -194,6 +196,9 @@ header {
 }
 
 /*WORK*/
+#proyectos{
+  background-color: #d4e0e4;
+}
 
 #proyectos h1 {
   text-align: center;
@@ -354,7 +359,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   color: #fff;
-  border: 1px solid greenyellow;
 }
 
 footer > div {
@@ -414,13 +418,14 @@ footer a {
     display: block;
     position: fixed;
     right: 10px;
+    z-index: 100;
   }
 
   nav{
     display: none;
   }
 
-  .text-links{
+  .text-links,.active{
     position: fixed;
     top: 0;
     flex-direction: column;
@@ -441,6 +446,7 @@ footer a {
 
   justify-content: flex-start;
   }
+
   .text-links img{
     padding-top: 50px;
     min-width: 200px;
@@ -483,6 +489,7 @@ footer a {
     margin: 0 25px;
   }
   /*ABOUT*/
+
   .inicio-content {
     flex-direction: column;
     padding: 40px 20px;
