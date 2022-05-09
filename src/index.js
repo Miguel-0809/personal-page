@@ -42,10 +42,11 @@ sr.reveal('.inicio-content', {
 
 sr.reveal('.project-card', {
     duration: 4000,
-    origin: 'right',
-    distance: '400px',
+    origin: 'bottom',
+    distance: '100px',
     reset: true
 });
+
 
 sr.reveal('.form-contact', {
     duration: 3000,

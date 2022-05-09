@@ -5,7 +5,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Fredoka", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -38,23 +37,13 @@ nav {
 nav img {
   max-width: 75px;
   padding: 10px;
+  
 }
 
 /*HOME*/
 header {
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background-image: url(images/bg.jpg);
+ background-size: cover;
 }
 
 #home {
@@ -63,6 +52,7 @@ header {
 }
 
 .text-links {
+  filter: brightness(150%);
   justify-content: space-between;
   padding: 0 50px;
   display: flex;
@@ -70,6 +60,7 @@ header {
   align-items: center;
   height: 100px;
   width: 100%;
+  font-size: 18px;
 }
 
 .text-links li,
@@ -97,7 +88,11 @@ header {
 }
 
 .icon-links i {
-  font-size: 25px;
+  font-size: 35px;
+}
+
+.hometext-sec{
+  font-size: 20px;
 }
 
 .home-intro {
@@ -106,12 +101,11 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 }
 
 .home-intro span {
-  font-size: 45px;
-  max-width: 400px;
+  font-size: 60px;
+  max-width: 500px;
   margin: 20px 40px;
 }
 
@@ -153,8 +147,8 @@ header {
 .inicio-content > div {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  min-height: 450px;
+  max-width: 800px;
+  min-height: 70vh;
   justify-content: space-between;
   margin: 0 10px;
   padding: 0 10px;
@@ -162,24 +156,29 @@ header {
 
 .inicio-content h1 {
   max-width: 100%;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   margin-top: 50px;
+  height: 70px;
 }
 
 .inicio-content img {
+  margin-top: 20px;
   max-width: 900px;
   border-radius: 10px;
   border-radius: 50%;
+  border: 1px solid salmon;
 }
 
 .skills {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
 }
 .skills li {
   padding: 10px;
   margin: 10px;
+  font-size: 20px;
   background-color: rgb(78, 104, 138);
   color: white;
   border-radius: 5px;
@@ -189,43 +188,82 @@ header {
   text-align: center;
   margin-bottom: 20px;
   font-size: 20px;
+  font-weight: bolder;
 }
 
 .bio-info p {
   text-align: justify;
-  max-width: 900px;
+  max-width: 1000px;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 /*WORK*/
 #proyectos{
-  background-color: #d4e0e4;
+  background-color: black;
+  min-height: 100vh;
+}
+
+.project-container{
+  display: flex;
+  flex-direction: row;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
 }
 
 #proyectos h1 {
   text-align: center;
-  margin-top: 20px;
   font-size: 30px;
-}
-
-.project-card {
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  margin: 40px auto;
 }
 
-.description-card {
-  padding: 20px 30px;
-  max-width: 700px;
+.project-card {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+  max-width: 270px;
+  
+}
+
+.image-card {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-card img{
+  max-width: 100%;
+}
+
+.image-card img:hover{
+  transform: scale(1.5);
+  transition: 1s;
+  filter: brightness(50%);
 }
 
 .description-card h3 {
-  font-size: 70px;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  height: 40px;
+}
+
+.description-card{
+  height: 330px;
 }
 
 .description-card p {
-  font-size: 20px;
+  font-size: 17px;
+  padding: 10px;
+  text-align: justify;
+  margin-bottom: 15px;
 }
 
 .skills-card {
@@ -240,18 +278,21 @@ header {
   padding: 10px;
   border-radius: 10px;
   color: white;
-  background-color: #0f0c29;
+  background-color: #000000;
 }
 
-.image-card {
-  min-width: 250px;
-  display: flex;
-  justify-content: center;
+.project-link{
+ background-color: #000000;
+ color: white; 
+ text-decoration: none;
+ padding: 10px;
+ margin: 15px;
+ text-align: left;
 }
 
-.image-card img {
-  max-width: 220px;
-  border-radius: 8px;
+.project-link:hover{
+  color: #000000;
+  background-color: grey;
 }
 
 /*CONTACT*/
@@ -275,6 +316,7 @@ header {
 .form-contact h1 {
   margin: 15px 0;
   color: black;
+  height: 50px;
 }
 .form-contact h1 span {
   color: #5ba8bd;
@@ -370,6 +412,9 @@ footer > div {
   flex-direction: column;
   padding: 15px 0;
 }
+footer h3{
+  height: 44px;
+}
 
 footer ul {
   display: flex;
@@ -428,9 +473,10 @@ footer a {
   nav img {
     max-width: 75px;
     padding: 40px;
-  }
+  }  
 
   .text-links,.active{
+    filter: brightness(100%);
     position: fixed;
     top: 0;
     flex-direction: column;
@@ -507,9 +553,10 @@ footer a {
   }
 
   #inicio h1 {
+    font-size: 30px;
     text-align: center;
     max-width: 100%;
-    margin: 35px 0 -30px 0;
+    margin: 35px 0 10px 0;
   }
 
   .inicio-content > div:first-child {
@@ -532,17 +579,34 @@ footer a {
   .skills {
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   /*WORK*/
+  .project-container{
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: hidden;
+    
+  }
 
   .project-card {
     flex-direction: column;
+    text-align: center;
+    max-width: 95vw;
+    height: auto;
+    margin: 7px auto;
+  }
+  .image-card{
+    max-width: 100%;
   }
 
-  .image-card {
-    margin-top: 20px;
+  .image-card img{
+    max-width: 100%;
+    border-radius: 0%;
   }
+
+
 
   /*CONTACT*/
 
