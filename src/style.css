@@ -156,7 +156,7 @@ header {
 
 .inicio-content h1 {
   max-width: 100%;
-  font-size: 50px;
+  font-size: 2vw;
   text-align: center;
   margin-top: 50px;
   height: 70px;
@@ -215,6 +215,7 @@ header {
 #proyectos h1 {
   text-align: center;
   font-size: 30px;
+  margin-top: 10px;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -310,7 +311,7 @@ header {
   color: #fff;
   max-width: 1000px;
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
+  margin: 0 15px;
 }
 
 .form-contact h1 {
@@ -329,6 +330,7 @@ header {
 
 .form-div h3 {
   text-align: center;
+  height: 40px;
 }
 
 .form-div form {
