@@ -184,6 +184,9 @@ header {
   border-radius: 5px;
 }
 
+.bio-info{
+  min-height: 280px;
+}
 .bio-info h3 {
   text-align: center;
   margin-bottom: 20px;
@@ -196,6 +199,22 @@ header {
   max-width: 1000px;
   font-size: 20px;
   line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.cv{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cv:hover{
+  color: #000000;
+  background-color: gray;
+  transition: 1s;
 }
 
 /*WORK*/
@@ -294,6 +313,7 @@ header {
 .project-link:hover{
   color: #000000;
   background-color: grey;
+  transition: 1s;
 }
 
 /*CONTACT*/
@@ -583,6 +603,10 @@ footer a {
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .bio-info{
+    min-height: 400px;
   }
   /*WORK*/
   .project-container{
