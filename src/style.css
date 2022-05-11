@@ -2,11 +2,11 @@
   --main-color: #30d2d3;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+body{
+overflow-x: hidden;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 section,
@@ -606,7 +606,7 @@ footer a {
   }
 
   .bio-info{
-    min-height: 400px;
+    max-height: 700px;
   }
   /*WORK*/
   .project-container{
